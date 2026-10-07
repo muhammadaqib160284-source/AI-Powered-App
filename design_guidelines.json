@@ -1,0 +1,181 @@
+{
+  "project_name": "Intervia",
+  "app_type": "hybrid_saas_app_and_marketing_landing_page",
+  "theme_strategy": {
+    "landing_page": "Dark hero section (rich dark obsidian #0B0F17) transitioning to clean light sections",
+    "app_shell_and_dashboard": "Light mode primary (#F8FAFC background, pure white cards) with sharp, crisp dark text and refined indigo/slate/emerald accents",
+    "user_context": "Supports switching between Individual candidate/interviewer mode and Organization mode, with Role Switcher (ADMIN, HR, VIEWER) in the top bar / profile menu"
+  },
+  "typography": {
+    "font_imports": [
+      "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    ],
+    "headings": {
+      "font_family": "'Outfit', sans-serif",
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-semibold tracking-tight",
+      "h4": "text-lg sm:text-xl font-semibold"
+    },
+    "body": {
+      "font_family": "'Plus Jakarta Sans', sans-serif",
+      "text": "text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed",
+      "small": "text-xs text-slate-500 font-medium"
+    },
+    "code_and_mono": {
+      "font_family": "'JetBrains Mono', monospace",
+      "style": "text-xs sm:text-sm tracking-wide"
+    }
+  },
+  "colors": {
+    "hsl_tokens_root_light": {
+      "--background": "210 40% 98%",
+      "--foreground": "222 47% 11%",
+      "--card": "0 0% 100%",
+      "--card-foreground": "222 47% 11%",
+      "--popover": "0 0% 100%",
+      "--popover-foreground": "222 47% 11%",
+      "--primary": "224 76% 48%",
+      "--primary-foreground": "210 40% 98%",
+      "--secondary": "210 40% 96.1%",
+      "--secondary-foreground": "222 47% 11%",
+      "--muted": "210 40% 96.1%",
+      "--muted-foreground": "215.4 16.3% 46.9%",
+      "--accent": "210 40% 94%",
+      "--accent-foreground": "222 47% 11%",
+      "--destructive": "0 84.2% 60.2%",
+      "--destructive-foreground": "210 40% 98%",
+      "--border": "214.3 31.8% 91.4%",
+      "--input": "214.3 31.8% 91.4%",
+      "--ring": "224 76% 48%",
+      "--chart-1": "224 76% 48%",
+      "--chart-2": "160 84% 39%",
+      "--chart-3": "38 92% 50%",
+      "--chart-4": "280 65% 60%",
+      "--chart-5": "340 75% 55%",
+      "--radius": "0.5rem"
+    },
+    "hsl_tokens_dark": {
+      "--background": "222 47% 6%",
+      "--foreground": "210 40% 98%",
+      "--card": "222 47% 9%",
+      "--card-foreground": "210 40% 98%",
+      "--popover": "222 47% 9%",
+      "--popover-foreground": "210 40% 98%",
+      "--primary": "224 76% 58%",
+      "--primary-foreground": "222 47% 11%",
+      "--secondary": "217.2 32.6% 17.5%",
+      "--secondary-foreground": "210 40% 98%",
+      "--muted": "217.2 32.6% 17.5%",
+      "--muted-foreground": "215 20.2% 65.1%",
+      "--accent": "217.2 32.6% 17.5%",
+      "--accent-foreground": "210 40% 98%",
+      "--destructive": "0 62.8% 30.6%",
+      "--destructive-foreground": "210 40% 98%",
+      "--border": "217.2 32.6% 17.5%",
+      "--input": "217.2 32.6% 17.5%",
+      "--ring": "224 76% 58%"
+    },
+    "brand_accents": {
+      "indigo_primary": "#3B82F6",
+      "deep_navy": "#0F172A",
+      "emerald_strong": "#10B981",
+      "amber_warning": "#F59E0B",
+      "rose_critical": "#F43F5E",
+      "slate_surface": "#F8FAFC"
+    }
+  },
+  "layout_and_grid": {
+    "app_shell": {
+      "sidebar_width": "w-64 desktop, collapsible to w-16 or hidden drawer on mobile",
+      "header_height": "h-16 flex items-center justify-between px-6 border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 sticky top-0 z-40",
+      "global_search": "⌘K Quick Search trigger opening Command Dialog with candidates, interviews, settings, and jump-to links",
+      "role_switcher_pill": "Badge displaying ADMIN / HR / VIEWER with quick interactive dropdown toggle"
+    },
+    "interviews_20_80_split": {
+      "wrapper": "grid grid-cols-1 lg:grid-cols-12 gap-6 h-[calc(100vh-6rem)]",
+      "left_list_pane": "lg:col-span-3 xl:col-span-3 border-r border-slate-200 dark:border-slate-800 pr-4 overflow-y-auto space-y-3",
+      "right_detail_pane": "lg:col-span-9 xl:col-span-9 overflow-y-auto pl-2 pr-4 space-y-6"
+    },
+    "dashboard_grid": {
+      "stats_row": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6",
+      "charts_row": "grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6",
+      "tables_row": "grid grid-cols-1 lg:grid-cols-2 gap-6"
+    }
+  },
+  "key_components": {
+    "landing_hero_interviewer_panel": {
+      "description": "Original visual mockup showing AI interviewer audio waveform / abstract avatar canvas, current dynamic question prompt, Candidate video stream w/ live ● RECORDING indicator and timeline controls",
+      "container_style": "rounded-2xl border border-slate-800 bg-slate-950 p-6 shadow-2xl overflow-hidden relative"
+    },
+    "score_ring_87": {
+      "description": "Circular SVG radial progress meter showing 87/100, colored Emerald (#10B981) with 'Strong Candidate' status badge and sub-scores (Technical 90, Communication 82, Problem Solving 88, System Design 85)",
+      "badge": "inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200"
+    },
+    "skill_bars": {
+      "style": "Custom progress bar with animated fill width, numeric percentage badge, and expandable AI insight drawer explaining why candidate achieved score"
+    },
+    "transcript_evaluator": {
+      "style": "Collapsible Q&A blocks with timestamps, verbatim candidate answer quote, and AI feedback callout box with key strengths and missed points highlighted"
+    },
+    "video_player_modal": {
+      "style": "Video container with simulated interactive scrubber timeline containing AI topic markers (e.g. '02:15 - Architecture Discussion', '08:40 - Algorithm Explanation') and full-screen preview modal"
+    },
+    "resume_preview_modal": {
+      "style": "Dual-column modal showing PDF document view on left and AI parsed resume tags/skills/experience breakdown on right"
+    }
+  },
+  "media_assets": {
+    "candidate_featured": {
+      "name": "Sarah Khan",
+      "role": "Senior Backend Engineer",
+      "score": 87,
+      "avatar_url": "https://images.unsplash.com/photo-1573497161161-c3e73707e25c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwzfHxzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwd29tYW4lMjBwb3J0cmFpdCUyMGhlYWRzaG90fGVufDB8fHx8MTc5MTQwMDMxNnww&ixlib=rb-4.1.0&q=85"
+    },
+    "candidate_secondary_1": {
+      "name": "Alex Rivera",
+      "role": "Full Stack Developer",
+      "score": 92,
+      "avatar_url": "https://images.unsplash.com/photo-1580894908361-967195033215?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwyfHxzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwd29tYW4lMjBwb3J0cmFpdCUyMGhlYWRzaG90fGVufDB8fHx8MTc5MTQwMDMxNnww&ixlib=rb-4.1.0&q=85"
+    },
+    "candidate_secondary_2": {
+      "name": "David Chen",
+      "role": "DevOps / Infrastructure Architect",
+      "score": 78,
+      "avatar_url": "https://images.unsplash.com/photo-1631377307475-9acfa929b062?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwd29tYW4lMjBwb3J0cmFpdCUyMGhlYWRzaG90fGVufDB8fHx8MTc5MTQwMDMxNnww&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "motion_and_interactions": {
+    "library": "framer-motion",
+    "page_transitions": "AnimatePresence with opacity 0 to 1 and translateY(8px) for smooth tab switches",
+    "hover_states": "All action buttons must feature transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-150 ease-in-out",
+    "waveform_animation": "CSS keyframe pulse and scale heights for live audio waveform bars"
+  },
+  "testing_guidelines": {
+    "mandatory_data_testid": "Every interactive element (buttons, tabs, inputs, dropdowns, navigation links, modals) MUST include a clear kebab-case data-testid attribute.",
+    "examples": [
+      "data-testid=\"landing-create-interview-button\"",
+      "data-testid=\"nav-overview-link\"",
+      "data-testid=\"nav-interviews-link\"",
+      "data-testid=\"role-switcher-select\"",
+      "data-testid=\"context-switcher-dropdown\"",
+      "data-testid=\"candidate-search-input\"",
+      "data-testid=\"interview-candidate-item-sarah-khan\"",
+      "data-testid=\"interview-tab-overview\"",
+      "data-testid=\"interview-tab-skills\"",
+      "data-testid=\"interview-tab-transcript\"",
+      "data-testid=\"interview-tab-report\"",
+      "data-testid=\"interview-tab-recording\"",
+      "data-testid=\"open-video-modal-button\"",
+      "data-testid=\"open-resume-modal-button\"",
+      "data-testid=\"new-interview-submit-button\""
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. Do not use generic Vercel/Linear dark templates everywhere. The app shell is clean light mode with deep slate headers, while the landing hero is dark obsidian.",
+    "2. Ensure both Individual and Organization sign-up flows have explicit separate views/routes with an easy context switcher in the shell.",
+    "3. Keep role switcher (ADMIN/HR/VIEWER) functional across all views, restricting/disabling sensitive actions (e.g., delete candidate, org settings) when VIEWER role is active.",
+    "4. Ensure full responsive design for the 20/80 interview layout: on mobile screens, list view takes full width, clicking a candidate opens detail in sheet/full page view with a back button.",
+    "5. Populate realistic data for interviews, transcripts, radar/bar skill charts, and AI reports rather than lorem ipsum."
+  ]
+}
