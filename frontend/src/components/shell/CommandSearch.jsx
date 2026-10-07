@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Search, MessagesSquare, User, Briefcase, CornerDownLeft, ArrowRight } from "lucide-react";
 import { CommandDialog, CommandInput, CommandList, CommandEmpty, CommandGroup, CommandItem, CommandSeparator } from "@/components/ui/command";
-import { DialogTitle } from "@/components/ui/dialog";
+import { DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { StatusBadge } from "@/components/common/Badges";
 import { ScorePill } from "@/components/common/ScoreRing";
 import { Avatar } from "@/components/common/Avatar";
@@ -48,6 +48,7 @@ export function CommandSearch() {
       </button>
       <CommandDialog open={open} onOpenChange={setOpen}>
         <DialogTitle className="sr-only">Search</DialogTitle>
+        <DialogDescription className="sr-only">Search interviews, candidates, roles and pages</DialogDescription>
         <CommandInput placeholder="Search interviews, candidates, roles..." data-testid="global-search-input" />
         <CommandList className="max-h-[420px]">
           <CommandEmpty>{index ? "No results. Try a candidate name or role." : "Loading…"}</CommandEmpty>
